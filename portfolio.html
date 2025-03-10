@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Satyam Pandey - Portfolio</title>
+  <!-- Google Fonts: Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Fav icon code  -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/logo.png" alt="Logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#story">My Journey</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+      </ul>
+      <button class="cv-btn"><a href="#">
+        Download CV <i class="fas fa-arrow-down arrow"></i>
+      </a></button>
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Hello, I am <span class="gradient-name">Satyam Pandey</span></h1>
+        <div class="typed-container">
+          <span class="typed"></span>
+        </div>
+        <p class="tagline">Turning challenges into opportunities through code.</p>
+        <a href="mailto:ofcsatyam007@gmail.com" class="contact-btn">
+          Get in Touch <i class="fas fa-arrow-right arrow"></i>
+        </a>
+      </div>
+      <div class="hero-image">
+        <img
+          src="https://images.stockcake.com/public/5/e/6/5e6fb906-70e0-4ec9-9df9-fb564a8fec74_large/coder-at-work-stockcake.jpg"
+          alt="Student Image" />
+      </div>
+    </section>
+    <div class="divider"></div>
+
+    <!-- Story Section -->
+    <section id="story" class="scroll-reveal">
+      <div class="story-ribbon-top">
+        <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+          <path d="M0 60 Q 300 0, 600 60 T 1200 60" stroke-dasharray="300" stroke-dashoffset="0" />
+        </svg>
+      </div>
+      <div class="story-container">
+        <div class="story-content">
+          <h2>My Journey:<br />From Humble Beginnings<br />to Coding Today</h2>
+          <p>I first discovered my passion for coding in 10th grade—long before I had my own laptop. Watching videos on
+            the Apna College YouTube channel sparked my interest. I initially learned Java, but my studies interrupted
+            my progress. After exams, I embraced web development, mastering HTML, CSS, and JavaScript through small
+            projects despite limited resources.</p>
+          <p>In my second year of B.Tech, I finally got my own laptop. Today, I’m building on my web development skills
+            while balancing college life—and I’m a keen cricketer, playing as a right-arm fast bowler. My journey
+            reflects resilience, curiosity, and a love for both tech and sports.</p>
+          <div class="story-highlight">
+            <i class="fas fa-code"></i>
+            <span>Currently exploring: MERN Stack and Artificial Intelligence</span>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item" data-decor="code">
+              <span class="timeline-date">2023</span>
+              <p>Started coding with Java via YouTube tutorials.</p>
+            </div>
+            <div class="timeline-item" data-decor="web">
+              <span class="timeline-date">2024</span>
+              <p>Mastered web development basics.</p>
+            </div>
+            <div class="timeline-item" data-decor="trophy">
+              <span class="timeline-date">2025</span>
+              <p>Won the hackathon #1 rank as a team lead @Elite Squad</p>
+            </div>
+          </div>
+        </div>
+        <div class="story-decor">
+          <span class="particle" style="top: 20%; left: 30%; animation-delay: 0s"></span>
+          <span class="particle" style="top: 50%; left: 70%; animation-delay: 2s"></span>
+          <span class="particle" style="top: 80%; left: 40%; animation-delay: 4s"></span>
+          <div class="decor-elements">
+            <span class="floating-icon" data-type="code"
+              data-desc="Began my coding journey with Java, sparked by Apna College tutorials."
+              style="top: 20%; left: 30%"><i class="fas fa-code"></i></span>
+            <span class="floating-icon" data-type="web"
+              data-desc="Mastered HTML, CSS, and JavaScript through small projects." style="top: 50%; left: 60%"><i
+                class="fas fa-globe"></i></span>
+            <span class="floating-icon" data-type="trophy" data-desc="Led Elite Squad to a hackathon victory in 2023."
+              style="top: 80%; left: 20%"><i class="fas fa-trophy"></i></span>
+          </div>
+          <div class="icon-desc-popup">
+            <span class="popup-close">×</span>
+            <p class="popup-text"></p>
+          </div>
+        </div>
+      </div>
+      <div class="story-ribbon-bottom">
+        <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+          <path d="M0 0 Q 300 60, 600 0 T 1200 0" stroke-dasharray="300" stroke-dashoffset="0" />
+        </svg>
+      </div>
+    </section>
+    <div class="divider"></div>
+
+    <!-- Skills Section -->
+    <section id="skills" class="scroll-reveal">
+      <h2>Skills</h2>
+      <p class="skills-intro">A showcase of my technical and interpersonal abilities.</p>
+      <div class="skills-container">
+        <!-- Programming Languages -->
+        <div class="skill-card">
+          <i class="fab fa-js skill-icon"></i>
+          <div class="skill-name">JavaScript</div>
+          <div class="skill-circle">
+            <svg viewBox="0 0 100 100">
+              <circle class="circle-bg" cx="50" cy="50" r="45"></circle>
+              <circle class="circle-progress" cx="50" cy="50" r="45" data-progress="65" style="stroke-dasharray: 0 283">
+              </circle>
+            </svg>
+            <span class="circle-text">65%</span>
+          </div>
+          <div class="skill-desc">Dynamic scripting for interactive web apps.</div>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-java skill-icon"></i>
+          <div class="skill-name">Java</div>
+          <div class="skill-circle">
+            <svg viewBox="0 0 100 100">
+              <circle class="circle-bg" cx="50" cy="50" r="45"></circle>
+              <circle class="circle-progress" cx="50" cy="50" r="45" data-progress="50" style="stroke-dasharray: 0 283">
+              </circle>
+            </svg>
+            <span class="circle-text">50%</span>
+          </div>
+          <div class="skill-desc">Object-oriented programming foundation.</div>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-code skill-icon"></i>
+          <div class="skill-name">C</div>
+          <div class="skill-circle">
+            <svg viewBox="0 0 100 100">
+              <circle class="circle-bg" cx="50" cy="50" r="45"></circle>
+              <circle class="circle-progress" cx="50" cy="50" r="45" data-progress="40" style="stroke-dasharray: 0 283">
+              </circle>
+            </svg>
+            <span class="circle-text">40%</span>
+          </div>
+          <div class="skill-desc">Low-level programming basics.</div>
+        </div>
+        <!-- Web Development -->
+        <div class="skill-card">
+          <i class="fab fa-html5 skill-icon"></i>
+          <div class="skill-name">HTML</div>
+          <div class="skill-circle">
+            <svg viewBox="0 0 100 100">
+              <circle class="circle-bg" cx="50" cy="50" r="45"></circle>
+              <circle class="circle-progress" cx="50" cy="50" r="45" data-progress="90" style="stroke-dasharray: 0 283">
+              </circle>
+            </svg>
+            <span class="circle-text">90%</span>
+          </div>
+          <div class="skill-desc">Structuring content for the web.</div>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-css3-alt skill-icon"></i>
+          <div class="skill-name">CSS</div>
+          <div class="skill-circle">
+            <svg viewBox="0 0 100 100">
+              <circle class="circle-bg" cx="50" cy="50" r="45"></circle>
+              <circle class="circle-progress" cx="50" cy="50" r="45" data-progress="85" style="stroke-dasharray: 0 283">
+              </circle>
+            </svg>
+            <span class="circle-text">85%</span>
+          </div>
+          <div class="skill-desc">Styling and responsive design.</div>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-wind skill-icon"></i>
+          <div class="skill-name">Tailwind CSS</div>
+          <div class="skill-circle">
+            <svg viewBox="0 0 100 100">
+              <circle class="circle-bg" cx="50" cy="50" r="45"></circle>
+              <circle class="circle-progress" cx="50" cy="50" r="45" data-progress="70" style="stroke-dasharray: 0 283">
+              </circle>
+            </svg>
+            <span class="circle-text">70%</span>
+          </div>
+          <div class="skill-desc">Utility-first CSS framework.</div>
+        </div>
+        <!-- Soft Skills -->
+        <div class="skill-card">
+          <i class="fas fa-users skill-icon"></i>
+          <div class="skill-name">Teamwork</div>
+          <div class="skill-circle">
+            <svg viewBox="0 0 100 100">
+              <circle class="circle-bg" cx="50" cy="50" r="45"></circle>
+              <circle class="circle-progress" cx="50" cy="50" r="45" data-progress="80" style="stroke-dasharray: 0 283">
+              </circle>
+            </svg>
+            <span class="circle-text">80%</span>
+          </div>
+          <div class="skill-desc">Collaborating effectively in teams.</div>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-comments skill-icon"></i>
+          <div class="skill-name">Communication</div>
+          <div class="skill-circle">
+            <svg viewBox="0 0 100 100">
+              <circle class="circle-bg" cx="50" cy="50" r="45"></circle>
+              <circle class="circle-progress" cx="50" cy="50" r="45" data-progress="75" style="stroke-dasharray: 0 283">
+              </circle>
+            </svg>
+            <span class="circle-text">75%</span>
+          </div>
+          <div class="skill-desc">Clear and concise interaction.</div>
+        </div>
+      </div>
+    </section>
+    <div class="divider"></div>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <h2>My Projects</h2>
+
+      <!-- Project 1: Advanced Word Analyzer -->
+      <div class="project-card">
+        <div class="project-img">
+          <div class="slider-images">
+            <img src="images/piph1.png" alt="Pandemic Insights and Preparedness Hub" />
+            <img src="images/piph2.png" alt="Pandemic Insights and Preparedness Hub" />
+            <img src="images/piph3.png" alt="Pandemic Insights and Preparedness Hub" />
+            <img src="images/piph4.png" alt="Pandemic Insights and Preparedness Hub" />
+          </div>
+          <button class="slider-btn prev">❮</button>
+          <button class="slider-btn next">❯</button>
+        </div>
+        <div class="project-info">
+          <h3>PIPH - Help is always there for you</h3>
+          <p>
+            A comprehensive real-time platform integrating pandemic data, dynamic resource tracking, and emergency
+            alerts. Users in distress trigger alerts to nearby hospitals and volunteers. The multi-dashboard system
+            monitors pandemic trends, resources, and economic impact. Features include user/admin panels, resource
+            requests, an NGO directory, and organization registration with verification, ensuring efficient crisis
+            response and community support.
+          </p>
+          <div class="technologies-used">
+            <!-- <span>HTML</span>
+            <span>CSS</span> -->
+            <span>Javascript</span>
+            <span>Node JS</span>
+            <span>Express JS</span>
+            <span>Mongo DB</span>
+            <span>+12 More</span>
+          </div>
+          <div class="project-btns">
+            <a href="#" class="view-project-btn">View Project</a>
+            <a href="#" class="watch-project-btn">Watch it</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-img">
+          <div class="slider-images">
+            <img src="images/Word2.png" alt="Advanced Word Analyzer Image 1" />
+            <img src="images/Word1.png" alt="Advanced Word Analyzer Image 2" />
+          </div>
+          <button class="slider-btn prev">❮</button>
+          <button class="slider-btn next">❯</button>
+        </div>
+        <div class="project-info">
+          <h3>Advanced Word Analyzer</h3>
+          <p>
+            A responsive text analyzer built with HTML, CSS, and JavaScript. It
+            provides word, character, sentence, and paragraph counts, reading time,
+            WPM, and identifies the most frequent word. Features include night mode,
+            real-time updates, dynamic UI, error handling, and file download with
+            renaming.
+          </p>
+          <div class="technologies-used">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="project-btns">
+            <a href="#" class="view-project-btn">View Project</a>
+            <a href="#" class="watch-project-btn">Watch it</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Weather App -->
+      <div class="project-card">
+        <div class="project-img">
+          <div class="slider-images">
+            <img src="images/Weather1.png" alt="Weather App Image 1" />
+            <img src="images/Weather2.png" alt="Weather App Image 2" />
+            <img src="images/Weather3.png" alt="Weather App Image 3" />
+          </div>
+          <button class="slider-btn prev">❮</button>
+          <button class="slider-btn next">❯</button>
+        </div>
+        <div class="project-info">
+          <h3>Weather App</h3>
+          <p>
+            This is a real-time weather application that allows users to search
+            for weather details of any city. The app provides information such as
+            the current temperature, weather description, humidity, wind speed,
+            pressure, sunrise and sunset times, and geographical coordinates.
+          </p>
+          <div class="technologies-used">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>API (OpenWeather)</span>
+          </div>
+          <div class="project-btns">
+            <a href="#" class="view-project-btn">View Project</a>
+            <a href="#" class="watch-project-btn">Watch it</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="scroll-reveal">
+      <h2>Hobbies</h2>
+      <div class="hobbies-grid">
+        <div class="hobby-card">
+          <div class="hobby-image">
+            <img src="https://i.pinimg.com/736x/e8/d0/9d/e8d09dc7491d9801c8edb409a40186c7.jpg" alt="Music Hobby" />
+          </div>
+          <div class="hobby-text">
+            <strong>Listening Music:</strong> My favorite singers are Pawan Singh, Arijit Singh, and Sonu Nigam—their
+            soulful voices inspire me daily.
+          </div>
+        </div>
+        <div class="hobby-card">
+          <div class="hobby-image">
+            <img src="https://images.bhaskarassets.com/thumb/1200x900/web2images/521/2019/09/12/0521_virat-on-dhoni.jpg"
+              alt="Cricket Hobby" />
+          </div>
+          <div class="hobby-text">
+            <strong>Cricket:</strong> I love cricket. My favorite players—MS Dhoni, Virat Kohli, and KL Rahul—motivate
+            me with their passion and skill.
+          </div>
+        </div>
+        <div class="hobby-card">
+          <div class="hobby-image">
+            <img src="https://ieee-dataport.org/sites/default/files/Hackathonimage_5.png" alt="Programming Hobby" />
+          </div>
+          <div class="hobby-text">
+            <strong>Programming & Hackathons:</strong> I began with Apna College’s videos, learned Java and later web
+            development. I’m part of Elite Squad—we won a hackathon!
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="divider"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-contact">
+        <p>Email: ofcsatyam007@gmail.com</p>
+        <p>Mobile: NA</p>
+      </div>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Satyam Pandey. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Modal Popup for "View Project" -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">×</span>
+      <p>Thank you for your interest in this project. Currently, this project is undergoing maintenance and improvements
+        to enhance its performance, design, and overall user experience. Please check back soon for updates.</p>
+    </div>
+  </div>
+
+  <!-- Custom Script -->
+  <script src="portfolio.js"></script>
+</body>
+
+</html>
